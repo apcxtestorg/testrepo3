@@ -23,4 +23,5 @@ jobs:
           cx_client_id: ${{ secrets.oauthclient }}
           cx_client_secret: ${{ secrets.oauthsecret }}
           #additional_params: --apikey ${{ secrets.apisecret2 }}
-          additional_params: --sast-incremental --sast-preset-name "Checkmarx Default" --scan-types sast --sast-filter !**/**,test1folder/**,test2folder/**,test3folder/** --debug
+          #additional_params: --sast-incremental --sast-preset-name "Checkmarx Default" --scan-types sast --sast-filter !**/**,test1folder/**,test2folder/**,test3folder/** --debug
+          additional_params: --sast-incremental --sast-preset-name "Checkmarx Default" --scan-types sast --debug
