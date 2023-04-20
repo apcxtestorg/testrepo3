@@ -23,5 +23,5 @@ jobs:
           cx_client_id: ${{ secrets.oauthclient }}
           cx_client_secret: ${{ secrets.oauthsecret }}
           #additional_params: --apikey ${{ secrets.apisecret2 }}
-          additional_params: --sast-preset-name "Checkmarx Default" --scan-tags "test"
+          additional_params: --sast-preset-name "Checkmarx Default" --tags "test"
           #additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --debug
