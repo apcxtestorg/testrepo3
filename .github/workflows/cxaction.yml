@@ -7,6 +7,12 @@ on:
       - dev
   #schedule:
   #  - cron: "*/5 * * * *"
+  pull_request:
+    types: [opened, reopened, synchronize] #Types specify which pull request events will trigger the workflow. For more events refer Github Actions documentation.
+    branches:
+      - master
+      - main
+      - dev
     
 jobs:
   build:
