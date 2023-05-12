@@ -7,6 +7,12 @@ on:
       - dev
   #schedule:
   #  - cron: "*/5 * * * *"
+  pull_request:
+    types: [opened, reopened, synchronize] #Types specify which pull request events will trigger the workflow. For more events refer Github Actions documentation.
+    branches:
+      - master
+      - main
+      - dev
     
 jobs:
   build:
@@ -23,5 +29,5 @@ jobs:
           cx_client_id: ${{ secrets.oauthclient }}
           cx_client_secret: ${{ secrets.oauthsecret }}
           #additional_params: --apikey ${{ secrets.apisecret2 }}
-          additional_params: --sast-preset-name "Checkmarx Default" --tags "blueberry"
-          #additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --debug
+          #additional_params: --sast-preset-name "Checkmarx Default" --tags "blueberry"
+          additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --sast-incremental --debug
