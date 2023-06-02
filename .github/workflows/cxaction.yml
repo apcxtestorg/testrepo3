@@ -30,4 +30,4 @@ jobs:
           cx_client_secret: ${{ secrets.oauthsecret }}
           #additional_params: --apikey ${{ secrets.apisecret2 }}
           #additional_params: --sast-preset-name "Checkmarx Default" --tags "blueberry"
-          additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --sast-incremental --debug
+          additional_params: --sast-preset-name "Checkmarx Default" --debug
