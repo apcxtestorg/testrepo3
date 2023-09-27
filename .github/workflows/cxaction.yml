@@ -22,6 +22,7 @@ jobs:
           base_uri: https://eu.ast.checkmarx.net
           cx_client_id: ${{ secrets.oauthclient }}
           cx_client_secret: ${{ secrets.oauthsecret }}
+          #edit
           #additional_params: --apikey ${{ secrets.apisecret2 }}
           #additional_params: --sast-preset-name "Checkmarx Default" --tags "blueberry"
           #additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --debug
