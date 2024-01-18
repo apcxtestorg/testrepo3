@@ -1,3 +1,6 @@
 [submodule "submodtest"]
 	path = submodtest
 	url = https://github.com/apcxtest/ast-advanced-lab
+[submodule "astsubmodule"]
+	path = astsubmodule
+	url = https://github.com/apcxtest/astsubmodule.git
