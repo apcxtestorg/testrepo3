@@ -1,0 +1,23 @@
+
+name: Security Scan
+
+on:
+  push:
+    branches: [ main, release** ]
+    paths-ignore:
+      - '**/docs/**'  # any files in a docs directory anywhere in the repo
+      - '.git*/**'  # top level directories with .git prefix
+      - '**/catalog-info.yaml' # catalog-info.yaml file anywhere in repo
+      - .gitignore
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+    paths-ignore:
+      - '**/docs/**'  # any files in a docs directory anywhere in the repo
+      - '.git*/**'  # top level directories with .git prefix
+      - '**/catalog-info.yaml' # catalog-info.yaml file anywhere in repo
+      - .gitignore
+
+jobs:
+  call-security-scan:
+    name: Security Scan
+    uses: testrepo/.github/workflows/cxscan.yml@main
