@@ -20,4 +20,4 @@ on:
 jobs:
   call-security-scan:
     name: Security Scan
-    uses: testrepo/.github/workflows/cxscan.yml@main
+    uses: apcxtestorg/testrepo/.github/workflows/cxscan.yml@main
