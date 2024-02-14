@@ -2,8 +2,8 @@
 name: Security Scan
 
 on:
-  #push:
-  #  branches: [ main, release** ]
+  push:
+    branches: [ main, branch1 ]
     #paths-ignore:
     #  - '**/docs/**'  # any files in a docs directory anywhere in the repo
     #  - '.git*/**'  # top level directories with .git prefix
