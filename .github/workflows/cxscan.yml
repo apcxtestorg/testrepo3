@@ -21,3 +21,4 @@ jobs:
   call-security-scan:
     name: Security Scan
     uses: apcxtestorg/testrepo/.github/workflows/cxscan.yml@main
+    secrets: inherit
