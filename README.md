@@ -2,4 +2,4 @@
 public repo used to test connections to cx
 policy test
 
-test 7
+test 8
